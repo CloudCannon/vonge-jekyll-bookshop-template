@@ -1,6 +1,6 @@
 # Vonge
 
-Vonge is a Personal portfolio/blog site template for Jekyll. Browse through a [live demo](https://proper-gull.cloudvent.net/).
+Vonge is a Personal portfolio/blog site template for Jekyll. Browse through a [live demo](https://jazzed-kale.cloudvent.net/).
 Increase the web presence of your brand with this configurable theme.
 
 ![Vonge template screenshot](_screenshot.png)

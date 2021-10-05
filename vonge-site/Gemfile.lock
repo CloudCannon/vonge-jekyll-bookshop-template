@@ -11,14 +11,14 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     citrus (3.0.2)
-    cloudcannon-jekyll-bookshop (2.0.0.pre.beta.39)
+    cloudcannon-jekyll-bookshop (2.0.0.pre.beta.40)
       dry-inflector (>= 0.1, < 1.0)
       jekyll (>= 3.7, < 5.0)
       node-runner (>= 1.0, < 2.0)
       toml-rb (>= 2.0, < 3.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.9)
-    dry-inflector (0.2.0)
+    dry-inflector (0.2.1)
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -43,7 +43,7 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
-    jekyll-bookshop (2.0.0.pre.beta.39)
+    jekyll-bookshop (2.0.0.pre.beta.40)
       dry-inflector (>= 0.1, < 1.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-pagebreak (0.3.0)
@@ -86,8 +86,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cloudcannon-jekyll-bookshop (= 2.0.0.pre.beta.39)
-  jekyll-bookshop (= 2.0.0.pre.beta.39)
+  cloudcannon-jekyll-bookshop (= 2.0.0.pre.beta.40)
+  jekyll-bookshop (= 2.0.0.pre.beta.40)
   jekyll-pagebreak (~> 0.3)
   jekyll-sitemap
   jekyll-tagging

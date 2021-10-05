@@ -1,0 +1,15 @@
+[component]
+structures = []
+label = "Page"
+description = ""
+icon = "layers"
+tags = []
+
+# This component is to be used on pages where an array structure
+# is used to build the page on CloudCannon, and you want to enable
+# live previewing. This component expects a property "content_blocks"
+# to be passed that is an array of bookshop array structures.
+# This component also sets a theme if provided.
+
+[props]
+content_blocks = []

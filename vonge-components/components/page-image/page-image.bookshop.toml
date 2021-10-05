@@ -1,0 +1,10 @@
+[component]
+structures = [ "content_blocks" ]
+label = "Page Image"
+description = "Page image"
+icon = "wysiwyg"
+tags = ["Headers"]
+
+[props]
+image = "/images/author-big.jpg"
+image_alt = "My best photo"

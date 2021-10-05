@@ -1,0 +1,104 @@
+/* Newsletter */
+
+.c-subscribe { $c: &;
+	&__inner {
+		max-width: 580px;
+		margin: 0 auto;
+	}
+
+	&__info {
+		margin-bottom: 44px;
+		text-align: center;
+
+		@media only screen and (max-width: $mobile) {
+			#{$c}__title {
+				margin-bottom: 12px;
+				font-size: 36px;
+			}
+
+			#{$c}__subtitle {
+				#ityped {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	&__title {
+		display: inline-block;
+		margin-bottom: 24px;
+		font-size: 58px;
+		line-height: 1.2;
+	}
+
+	&__subtitle {
+		margin: 0 auto;
+		max-width: 480px;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.2;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 480px;
+		margin: 0 auto;
+	}
+
+	&__form-email {
+		flex-grow: 1;
+		width: 100%;
+		padding: 24px;
+		margin-bottom: 20px;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		border: none;
+		border-radius: 16px;
+		border: 1px solid transparent;
+		outline: 0;
+		color: $text-color;
+		background: $background-color-alt;
+		box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.07);
+		transition: $global-transition;
+
+		&::placeholder {
+			font-weight: 500;
+			color: $text-color;
+			opacity: 0.4;
+		}
+
+		&:focus {
+			border: 1px solid $primary-color;
+			box-shadow: 0px 4px 10px rgba($primary-color, 0.25);
+		}
+	}
+}
+
+.ityped-cursor {
+	font-weight: 400;
+	animation: blink 0.4s infinite;
+	animation-direction: alternate;
+}
+
+@keyframes blink {
+	0%, to {
+		color: transparent;
+	}
+
+	100% {
+		color: $primary-color;
+	}
+}
+
+@-webkit-keyframes blink {
+	0%, to {
+		color: transparent;
+	}
+
+	100% {
+		color: $primary-color;
+	}
+}

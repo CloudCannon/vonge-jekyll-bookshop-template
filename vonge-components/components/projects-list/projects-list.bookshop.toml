@@ -1,0 +1,9 @@
+[component]
+structures = [ "content_blocks" ]
+label = "Projects List"
+description = "Lists all of the site's projects"
+icon = "wysiwyg"
+tags = ["Collections"]
+
+[props]
+show_projects = true

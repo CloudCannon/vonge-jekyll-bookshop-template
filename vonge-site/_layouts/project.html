@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="container">
+
+  {% bookshop page-heading title=page.title description=page.subtitle %}
+  {% assign page_image = site.baseurl | append: page.image %}
+  {% bookshop page-image image=page_image %}
+
+  <div class="page animate">
+    {{ content }}
+  </div>
+
+  {% if page.previous.url %}
+  <div class="project__navigation animate">
+    <a class="project__prev" href="{{page.previous.url}}">
+      <div class="project__box">
+        <span class="project__nav__info">Next Project</span>
+        <h2 class="project__nav__title">{{page.previous.title}}<i class="ion ion-md-arrow-round-forward arrow-right"></i></h2>
+      </div>
+    </a>
+  </div>
+  {% endif %}
+
+</div>
+
+{% bookshop
+  newsletter newsletter_title=site.data.newsletter.newsletter_title
+  newsletter_description=site.data.newsletter.newsletter_description
+  newsletter_identifier=site.data.newsletter.newsletter_identifier
+  newsletter_button=site.data.newsletter.newsletter_button
+%}

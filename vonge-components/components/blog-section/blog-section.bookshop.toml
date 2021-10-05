@@ -1,0 +1,12 @@
+[component]
+structures = [ "content_blocks" ]
+label = "Blog"
+description = "Blog Section with heading, a image, a description and a link"
+icon = "wysiwyg"
+tags = ["Content"]
+
+[props]
+title = "Recent Works"
+description_html = "Vonge blog features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!"
+link_url = "/blog"
+show_posts = true

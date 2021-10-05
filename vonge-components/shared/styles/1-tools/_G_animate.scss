@@ -1,0 +1,20 @@
+/* Animate */
+body:not(.stop-animations) .animate {
+  animation: animateElement cubic-bezier(.300,.450,.450,.950) .75s;
+  animation-duration: 0.75s;
+  animation-iteration-count: 1;
+  transition: transform .15s;
+
+  @keyframes animateElement{
+    0% {
+      transform:  translate(0px, 80px);
+    }
+    100% {
+      transform:  translate(0px, 0px);
+    }
+  }
+}
+
+.resize-animation-stopper * {
+  transition: none !important;
+}

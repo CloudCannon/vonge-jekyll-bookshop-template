@@ -1,0 +1,34 @@
+<!-- begin testimonials -->
+<section class="section testimonials animate">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <div class="section__info">
+          <div class="section__head">
+            <h2 class="section__title">{{ include.title }}</h2>
+            <ul class="controls list-reset" id="customize-controls" aria-label="Slider Navigation" tabindex="0">
+              <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+                <i class="ion ion-ios-arrow-back"></i>
+              </li>
+              <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+                <i class="ion ion-ios-arrow-forward"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="section__description">{{ include.description_html }}</div>
+        </div>
+
+        {% if include.show_testimonials %}
+        <div class="testimonials__slider my-slider">
+          {% for testimonial-item in site.testimonials %}
+            {% bookshop testimonial-card testimonial-item=testimonial-item %}
+          {% endfor %}
+        </div>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end testimonials -->

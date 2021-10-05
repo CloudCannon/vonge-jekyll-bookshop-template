@@ -1,0 +1,6 @@
+#-------------------------------
+# Newsletter Settings
+newsletter_title: "Join my mailing list"
+newsletter_description: "Get inspiration, updates and, cool stuff!" # Add descriptions to the form.
+newsletter_identifier: "frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3" # Add your MailChimp form identifier.
+newsletter_button: "Subscribe"

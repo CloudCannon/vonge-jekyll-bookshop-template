@@ -1,0 +1,154 @@
+/* Testimonials Section */
+.testimonial-item {
+
+  .testimonial-content {
+    width: 100%;
+    padding: 32px;
+    border-radius: 16px;
+    color: $white;
+    background: linear-gradient(90deg, $primary-color 0%, $secondary-color 167%);
+
+    .client-meta {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 32px;
+    }
+    
+    .client-text {
+      position: relative;
+      margin-bottom: 0;
+      font-size: 15px;
+      line-height: 1.6;
+      text-align: center;
+
+      &::after {
+        content: "“";
+        position: absolute;
+        top: -10px;
+        left: -2%;
+        display: block;
+        z-index: 2;
+        font-size: 100px;
+        font-weight: 900;
+        line-height: 1;
+        color: $white;
+        opacity: 0.1;
+        pointer-events: none;
+      }
+    }
+
+    .image-container {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 8px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .client-info {
+      text-align: center;
+    }
+
+    .client-name {
+      margin-bottom: 8px;
+      font-size: 21px;
+      line-height: 1;
+      letter-spacing: normal;
+    }
+
+    .client-position {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      opacity: 0.7;
+    }
+  }
+}
+
+.testimonials__slider {
+  display: flex;
+}
+
+.tns-horizontal.tns-subpixel > .tns-item {
+  display: inline-flex;
+}
+
+.tns-outer {
+  position: relative;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  outline: none;
+
+  .prev,
+  .next {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.07);
+    color: $text-color;
+    background: $background-color-alt;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .2s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      display: block;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 50%;
+      opacity: 0;
+      visibility: hidden;
+      overflow: hidden;
+      background: linear-gradient(90deg, $primary-color 0%, $secondary-color 167%);
+      transition: all .2s ease;
+    }
+
+    &:hover {
+      color: $white;
+      background: transparent;
+
+      &::after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &:active {
+      transform: scale(0.97) translateY(1px);
+    }
+  }
+
+  .prev {
+    margin-right: 4px;
+  }
+}

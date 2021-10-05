@@ -1,0 +1,45 @@
+{% assign c = "c-blog-card" %}
+<div class="{{c}} col col-4 col-d-6 col-t-12">
+  <div class="{{c}}__inner">
+
+    {% if include.post.image %}
+    <div class="{{c}}__image-wrap">
+      <a class="{{c}}__image" href="{{ include.post.url }}">
+        <img loading="lazy" src="{{ include.post.image }}" alt="{{ include.post.title }}">
+      </a>
+    </div>
+    {% endif %}
+
+    <div class="{{c}}__content">
+
+      {% if include.post.tags.size >= 1 %}
+      <div class="{{c}}__tags-box">
+        {% for tag in include.post.tags %}
+        <a href="{{ site.baseurl }}/tag/{{ tag | downcase }}" class="{{c}}__tag">{{ tag }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <h2 class="{{c}}__title">
+        <a href="{{ include.post.url }}">{{ include.post.title }}</a>
+      </h2>
+
+      <p class="{{c}}__excerpt">
+        {% if include.post.description %}{{ include.post.description }}{% else %}{{ include.post.content | strip_html | truncate: 120 }}{% endif
+        %}
+      </p>
+
+      <div class="{{c}}__meta">
+        <div class="{{c}}__author-image">
+          <img loading="lazy" src="{{ site.data.author.author_image }}" alt="{{ site.data.author.author_name }}">
+        </div>
+        <div class="{{c}}__info">
+          <div class="{{c}}__author-name">{{ site.data.author.author_name }}</div>
+          <span class="{{c}}__date"><time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date_to_string
+              }}</time></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+[component]
+structures = [ "content_blocks" ]
+label = "Posts List"
+description = "Lists all of the site's blog posts"
+icon = "wysiwyg"
+tags = ["Collections"]
+
+[props]
+show_posts = true

@@ -1,0 +1,23 @@
+{% assign c = "c-testimonial-card" %}
+<div class="{{c}}">
+  <div class="{{c}}__content">
+    <div class="{{c}}__client-meta">
+      {% if include.testimonial-item.image %}
+        <div class="{{c}}__image-container">
+          <img class="{{c}}__client-avatar" src="{{ include.testimonial-item.image }}" alt="{{ include.testimonial-item.name }}">
+        </div>
+      {% endif %}
+      <div class="{{c}}__client-info">
+        {% if include.testimonial-item.name %}
+          <h3 class="{{c}}__client-name">{{ include.testimonial-item.name }}</h3>
+        {% endif %}
+        {% if include.testimonial-item.position %}
+          <p class="{{c}}__client-position">{{ include.testimonial-item.position }}</p>
+        {% endif %}
+      </div>
+    </div>
+    {% if include.testimonial-item.blurb %}
+      <p class="{{c}}__client-text">{{ include.testimonial-item.blurb }}</p>
+    {% endif %}
+  </div>
+</div>

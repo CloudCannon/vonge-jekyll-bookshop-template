@@ -1,0 +1,7 @@
+<a class="c-button c-button--{{include.type | slugify}} c-button--{{include.width | slugify | default: 'small'}}"
+   href="{{ include.link_url }}"
+   {% if include.open_in_new_tab %}
+        target="_blank"
+    {% endif %}>
+    {{ include.label }}
+</a>

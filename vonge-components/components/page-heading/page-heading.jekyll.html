@@ -1,0 +1,9 @@
+{% assign c = "c-page-heading" %}
+<div class="container">
+  <div class="{{c}}">
+    <h1 class="{{c}}__title">{{ include.title }}</h1>
+    {% if include.description %}
+      <p class="{{c}}__description">{{ include.description }}</p>
+    {% endif %}
+  </div>
+</div>

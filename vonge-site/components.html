@@ -1,0 +1,14 @@
+---
+permalink: /components/
+published: false
+---
+
+<!-- 
+    The bookshop_browser component loads an 
+    interactive component library on your website.
+-->
+{% if jekyll.environment == "production" %}
+    {% bookshop_browser /js/bookshop-hosted.js %}
+{% else %}
+    {% bookshop_browser :6086 %}
+{% endif %}

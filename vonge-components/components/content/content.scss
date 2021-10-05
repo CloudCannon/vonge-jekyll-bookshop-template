@@ -1,0 +1,14 @@
+.page {
+  max-width: 780px;
+  margin: 0 auto 60px;
+
+  a {
+    font-weight: 500;
+    border-bottom: 1px solid $border-color;
+
+    &:hover {
+      color: $link-color;
+      border-bottom-color: $link-color-hover;
+    }
+  }
+}

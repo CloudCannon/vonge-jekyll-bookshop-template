@@ -1,13 +1,13 @@
 {
-  "name": "vonge-template",
+  "name": "vonge-jekyll-bookshop-template",
   "description": "Vonge template for CloudCannon",
   "scripts": {
-    "bookshop-dev": "bookshop-browser -p 6086 -b ./vonge-components",
-    "bookshop-hosted": "bookshop-browser -b ./vonge-components -o vonge-site/js/bookshop-hosted.js",
-    "bookshop-live": "bookshop-live -b ./vonge-components -o vonge-site/_cloudcannon/bookshop-live.js",
-    "jekyll": "BUNDLE_GEMFILE=vonge-site/Gemfile bundle exec jekyll serve --source vonge-site --port 6060 --trace --unpublished",
+    "bookshop-dev": "bookshop-browser -p 6086 -b ./components",
+    "bookshop-hosted": "bookshop-browser -b ./components -o site/js/bookshop-hosted.js",
+    "bookshop-live": "bookshop-live -b ./components -o site/_cloudcannon/bookshop-live.js",
+    "jekyll": "BUNDLE_GEMFILE=site/Gemfile bundle exec jekyll serve --source site --port 6060 --trace --unpublished",
     "start": "run-p bookshop-dev jekyll",
-    "install-jekyll": "BUNDLE_GEMFILE=vonge-site/Gemfile bundle install"
+    "install-jekyll": "BUNDLE_GEMFILE=site/Gemfile bundle install"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/bglw/bookshop-example#readme",
   "devDependencies": {
-    "@bookshop/browser": "^2.0.0-beta.41",
-    "@bookshop/jekyll-engine": "^2.0.0-beta.41",
-    "@bookshop/live": "^2.0.0-beta.41",
+    "@bookshop/browser": "^2.0.0",
+    "@bookshop/jekyll-engine": "^2.0.0",
+    "@bookshop/live": "^2.0.0",
     "npm-run-all": "^4.1.5"
   }
 }

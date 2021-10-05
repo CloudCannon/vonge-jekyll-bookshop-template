@@ -10,7 +10,7 @@ plugins:
 # Multiple bookshops can be used on one website,
 # or different production / staging locations.
 bookshop_locations:
-  - ../vonge-components
+  - ../components
 
 exclude:
   - postcss.config.js

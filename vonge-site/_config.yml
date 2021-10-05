@@ -52,8 +52,6 @@ cloudcannon:
       _subtext_key: position
       _enabled_editors:
         - data
-    posts:
-    drafts:
 
 _collection_groups:
   - heading: Content

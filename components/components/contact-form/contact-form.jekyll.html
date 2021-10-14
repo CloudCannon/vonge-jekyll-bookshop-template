@@ -1,13 +1,9 @@
 <!-- begin contact -->
 {% assign c = "c-contact-form" %}
-<div class="{{c}}">
+<div class="{{c}}" id="contact">
   <div class="container">
     <div class="row">
       <div class="col col-12">
-
-        <div class="{{c}}__close">
-          <i class="ion ion-md-close"></i>
-        </div>
 
         <div class="{{c}}__form-box">
           <div class="{{c}}__contact-head">
@@ -15,8 +11,9 @@
             <p class="{{c}}__contact-description">{{ include.form_description }}</p>
           </div>
           <form class="{{c}}__form"
-            action="https://formspree.io/{{include.form_submission_email}}"
+            action="{{include.form_success_page}}"
             method="POST">
+            <input type="hidden" name="_to" value="{{include.form_submission_email}}">
             <div class="{{c}}__form-group">
               <label class="{{c}}__form-label screen-reader-text" for="form-name">Your Name</label>
               <input class="{{c}}__form-input" id="form-name" type="text" name="name" placeholder="Your name..." required>

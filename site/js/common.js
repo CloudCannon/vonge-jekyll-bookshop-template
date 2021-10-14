@@ -5,9 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Menu
   ======================= */
   var body = document.querySelector("body"),
-  contactBox = document.querySelector(".contact-modal"),
-  contactOpenButton = document.querySelector(".cta-button"),
-  contactCloseButton = document.querySelector(".contact-close"),
   menuOpenIcon = document.querySelector(".nav__icon-menu"),
   menuCloseIcon = document.querySelector(".nav__icon-close"),
   menuList = document.querySelector(".main-nav");
@@ -20,19 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     menuClose();
   });
 
-  if (contactOpenButton) {
-    contactOpenButton.addEventListener("click", (e) => {
-      e.preventDefault();
-      contactOpen();
-    });
-  };
-
-  if (contactCloseButton) {
-    contactCloseButton.addEventListener("click", (e) => {
-      contactClose();
-    });
-  };
-
   function menuOpen() {
     menuList.classList.add("is-open");
   }
@@ -40,18 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function menuClose() {
     menuList.classList.remove("is-open");
   }
-
-  function contactOpen() {
-    if (contactBox) {  
-      contactBox.classList.add("is-visible");
-      menuList.classList.remove("is-open");
-    }
-  }
-
-  function contactClose() {
-    contactBox.classList.remove("is-visible");
-  }
-
 
   /* =======================
   // Animation Load Page

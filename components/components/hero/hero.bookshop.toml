@@ -11,4 +11,6 @@ description_html = "<strong>Photographer</strong> and <strong>Visual Content Str
 image = "/images/01.jpg"
 image_alt = "Vanessa Marley's picture"
 cta_button = "Get in touch"
+cta_button_link = "#contact"
 works_button = "See my works"
+works_button_link = "#projects"

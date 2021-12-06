@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/bglw/bookshop-example#readme",
   "devDependencies": {
-    "@bookshop/browser": "^2.2.0",
-    "@bookshop/jekyll-engine": "^2.2.0",
-    "@bookshop/live": "^2.2.0",
+    "@bookshop/browser": "2.2.0-editorlinks.0",
+    "@bookshop/jekyll-engine": "2.2.0-editorlinks.0",
+    "@bookshop/live": "2.2.0-editorlinks.0",
     "npm-run-all": "^4.1.5"
   }
 }

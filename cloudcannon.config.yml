@@ -7,6 +7,15 @@ collections_config:
   testimonials:
     icon: 'format_quote'
     subtext_key: position
+    sort:
+      key: name
+    sort_options:
+      - key: name
+      - key: name
+        order: desc
+      - key: position
+      - key: position
+        order: desc
     _enabled_editors:
       - data
 

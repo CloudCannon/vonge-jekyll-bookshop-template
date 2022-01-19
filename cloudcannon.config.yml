@@ -1,0 +1,31 @@
+collections_config:
+  pages:
+    icon: 'wysiwyg'
+  projects:
+    icon: 'work_outline'
+    subtext_key: subtitle
+  testimonials:
+    icon: 'format_quote'
+    subtext_key: position
+    _enabled_editors:
+      - data
+
+collection_groups:
+  - heading: Content
+    collections:
+      - pages
+      - projects
+      - testimonials
+  - heading: Blogging
+    collections:
+      - posts
+      - drafts
+  - heading: Settings
+    collections:
+      - data
+
+# The rest of this structures definition will be
+# populated by the bookshop-array-structures plugin.
+_structures:
+  content_blocks:
+    style: modal

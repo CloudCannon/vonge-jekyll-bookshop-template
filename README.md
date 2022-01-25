@@ -39,7 +39,7 @@ $ npm install
 Install the Jekyll dependencies with [Bundler](http://bundler.io/):
 
 ~~~bash
-$ npm run install-jekyll
+$ npm run jekyll:install
 ~~~
 
 Run the website:

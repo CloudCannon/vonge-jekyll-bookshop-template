@@ -2,7 +2,6 @@ title: Vonge
 
 plugins:
   - jekyll-bookshop
-  - cloudcannon-jekyll-bookshop
   - jekyll-sitemap
   - jekyll/tagging
   - jekyll-pagebreak
@@ -19,7 +18,7 @@ exclude:
 include:
   - _cloudcannon
 
-collections_dir: 'collections'
+collections_dir: "collections"
 
 collections:
   pages:
@@ -52,7 +51,6 @@ defaults:
       type: posts
     values:
       layout: post
-
 
 # Tags
 tag_page_dir: tag

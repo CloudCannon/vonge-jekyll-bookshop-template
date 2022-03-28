@@ -17,12 +17,6 @@ GEM
   specs:
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
-    citrus (3.0.2)
-    cloudcannon-jekyll-bookshop (2.4.2)
-      dry-inflector (>= 0.1, < 1.0)
-      jekyll (>= 3.7, < 5.0)
-      node-runner-temp-fix-windows (>= 1.0, < 2.0)
-      toml-rb (>= 2.0, < 3.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.9)
     dry-inflector (0.2.1)
@@ -52,7 +46,7 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
-    jekyll-bookshop (2.4.2)
+    jekyll-bookshop (3.0.0.pre.beta.3)
       dry-inflector (>= 0.1, < 1.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-pagebreak (0.8.1)
@@ -70,7 +64,6 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    node-runner-temp-fix-windows (1.0.1)
     nuggets (1.6.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -85,8 +78,6 @@ GEM
       google-protobuf (~> 3.19.0)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    toml-rb (2.1.2)
-      citrus (~> 3.0, > 3.0)
     unicode-display_width (1.8.0)
 
 PLATFORMS
@@ -94,8 +85,7 @@ PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
-  cloudcannon-jekyll-bookshop (= 2.4.2)
-  jekyll-bookshop (= 2.4.2)
+  jekyll-bookshop (= 3.0.0.pre.beta.3)
   jekyll-pagebreak (~> 0.3)
   jekyll-sass-converter!
   jekyll-sitemap

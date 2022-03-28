@@ -1,0 +1,28 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Contact Form
+  description: Generic contact form
+  icon: wysiwyg
+  tags:
+    - Text
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  form_title: ""
+  form_description: ""
+  form_success_page: ""
+  form_submission_email: ""
+  form_button_text: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  form_title: Get in touch
+  form_description: Vonge comes with a built-in contact form.
+  form_success_page: /
+  form_submission_email: site@example.com
+  form_button_text: Send now
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}

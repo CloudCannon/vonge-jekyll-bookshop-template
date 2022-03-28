@@ -1,0 +1,27 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Blog
+  description: Blog Section with heading, a image, a description and a link
+  icon: wysiwyg
+  tags:
+    - Content
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title: ""
+  description_html: ""
+  link_url: ""
+  show_posts: true
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  title: Recent Works
+  description_html: Vonge blog features productivity, tips, inspiration and
+    strategies for massive profits. Find out how to set up a successful blog or
+    how to make yours even better!
+  link_url: /blog
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}

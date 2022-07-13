@@ -1,15 +1,26 @@
-[component]
+# Metadata about this component, to be used in the CMS
+[spec]
 structures = []
-label = "Button"
-description = ""
-icon = "crop_7_5"
+label = 'Button'
+description = ''
+icon = 'crop_7_5'
 tags = []
 
-[props]
-label = "Button"
-type.select = ["Primary", "Secondary"]
-link_url = "/"
+# Defines the structure of this component, as well as the default values
+[blueprint]
+label = ''
+type = 'Primary'
+link_url = ''
 open_in_new_tab = false
+[blueprint.width]
+type = 'Small'
 
-[props.width]
-type.select = ["Small", "Large"]
+# Overrides any fields in the blueprint when viewing this component in the component browser
+[preview]
+label = 'Button'
+link_url = '/'
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+[_inputs]
+type.type = 'select'
+type.options.values = ['Small', 'Large']

@@ -1,15 +1,39 @@
-[component]
+# Metadata about this component, to be used in the CMS
+[spec]
 structures = []
-label = "Blog Card"
-description = "Blog card used for post lists"
-icon = "wysiwyg"
+label = 'Blog Card'
+description = 'Blog card used for post lists'
+icon = 'wysiwyg'
 tags = []
 
-[props.post]
-title = "Hello World"
-image = "https://placekitten.com/100/100"
-url = "/"
-tags = ["one", "two", "three"]
-description = "Lorem Ipsum"
-content = "Lorem Ipsum Donor"
-date = "2018-04-24 15:01:35 +0300"
+# Defines the structure of this component, as well as the default values
+[blueprint]
+[blueprint.post]
+title = ''
+image = ''
+url = ''
+tags = [
+  'one',
+  'two',
+  'three',
+]
+description = ''
+content = ''
+date = ''
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+[preview]
+post.title = 'Hello World'
+post.image = 'https://placekitten.com/100/100'
+post.url = '/'
+post.tags = [
+  'one',
+  'two',
+  'three',
+]
+post.description = 'Lorem Ipsum'
+post.content = 'Lorem Ipsum Donor'
+post.date = '2018-04-24 15:01:35 +0300'
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+[_inputs]

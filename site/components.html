@@ -4,11 +4,7 @@ published: false
 ---
 
 <!--
-    The bookshop_browser component loads an
+    The bookshop_component_browser component loads an
     interactive component library on your website.
 -->
-{% if jekyll.environment == "production" %}
-    {% bookshop_browser /js/bookshop-hosted.js %}
-{% else %}
-    {% bookshop_component_browser %}
-{% endif %}
+{% bookshop_component_browser %}

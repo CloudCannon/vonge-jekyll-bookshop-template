@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-npx @bookshop/generate@2.3.0
+npm i
+npx @bookshop/generate
 echo "📚 ✅ : Postbuild script finished"

@@ -1,9 +1,15 @@
 collections_config:
   pages:
     icon: 'wysiwyg'
+    schemas:
+      default:
+        path: site/schemas/page.html
   projects:
     icon: 'work_outline'
     subtext_key: subtitle
+    schemas:
+      default:
+        path: site/schemas/project.md
   testimonials:
     icon: 'format_quote'
     subtext_key: position
@@ -18,6 +24,13 @@ collections_config:
         order: desc
     _enabled_editors:
       - data
+    schemas:
+      default:
+        path: site/schemas/testimonial.md
+  posts:
+    schemas:
+      default:
+        path: site/schemas/post.md
 
 collection_groups:
   - heading: Content

@@ -5,7 +5,6 @@ plugins:
   - cloudcannon-jekyll-bookshop
   - jekyll-sitemap
   - jekyll/tagging
-  - jekyll-pagebreak
 
 # Multiple bookshops can be used on one website,
 # or different production / staging locations.

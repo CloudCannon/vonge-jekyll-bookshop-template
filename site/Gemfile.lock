@@ -46,8 +46,6 @@ GEM
     jekyll-bookshop (2.2.2)
       dry-inflector (>= 0.1, < 1.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-pagebreak (0.6.0)
-      jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (2.1.0)
       sassc (> 2.0.1, < 3.0)
     jekyll-sitemap (1.4.0)
@@ -88,7 +86,6 @@ PLATFORMS
 DEPENDENCIES
   cloudcannon-jekyll-bookshop (= 2.2.2)
   jekyll-bookshop (= 2.2.2)
-  jekyll-pagebreak (~> 0.3)
   jekyll-sitemap
   jekyll-tagging
   jekyll-watch!

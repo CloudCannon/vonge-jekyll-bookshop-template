@@ -1,6 +1,0 @@
----
-date:
-title:
-subtitle:
-image:
----

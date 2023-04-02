@@ -1,9 +1,0 @@
-[component]
-structures = [ "content_blocks" ]
-label = "Content"
-description = "Generic rich content area"
-icon = "wysiwyg"
-tags = ["Text"]
-
-[props]
-content_html = "<p>This is a <b>testing template</b> made with the <a href='https://github.com/cloudcannon/bookshop' target='_blank'>bookshop component system.</a></p>"

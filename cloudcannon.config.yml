@@ -111,5 +111,5 @@ _inputs:
 _structures:
   content_blocks:
     style: modal
-data_config: {}
+data_config: true
 timezone: Etc/UTC

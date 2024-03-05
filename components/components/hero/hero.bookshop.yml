@@ -1,0 +1,39 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Hero
+  description: Page hero with the heading, description, buttons, and an image
+  icon: wysiwyg
+  tags:
+    - Structure
+    - Text
+    - Links
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title: ""
+  description_html: ""
+  image: ""
+  image_alt: ""
+  cta_button: ""
+  cta_button_link: ""
+  works_button: ""
+  works_button_link: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  title: Hi there, I am Vanessa Marley
+  description_html: <strong>Photographer</strong> and <strong>Visual Content
+    Strategist</strong> from Albany. I work as a lifestyle, product, and
+    landscape photographer, creating images for a diverse range of requests,
+    from online media to printed artwork.
+  image: /images/01.jpg
+  image_alt: Vanessa Marley's picture
+  cta_button: Get in touch
+  cta_button_link: "#contact"
+  works_button: See my works
+  works_button_link: "#projects"
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}

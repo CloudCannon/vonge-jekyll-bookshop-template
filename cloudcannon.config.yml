@@ -108,8 +108,5 @@ _inputs:
       allow_create: true
       empty_type: array
     cascade: true
-_structures:
-  content_blocks:
-    style: modal
 data_config: true
 timezone: Etc/UTC

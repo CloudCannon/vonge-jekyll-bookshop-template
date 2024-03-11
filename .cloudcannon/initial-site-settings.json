@@ -1,0 +1,28 @@
+{
+    "ssg": "jekyll",
+    "build_configuration": {
+        "preserved_paths": "node_modules/",
+        "source": "site",
+        "config": "",
+        "limit_posts": "",
+        "incremental": false,
+        "drafts": false,
+        "unpublished": false,
+        "future": false,
+        "lsi": false,
+        "trace": false,
+        "verbose": false,
+        "quiet": false,
+        "profile": false,
+        "use_local_bundle": true,
+        "enable_bundle_cache": true,
+        "autosync_gemlock": false,
+        "includeGit": false,
+        "preserveOutput": false,
+        "environment_variables": [
+          { "key": "JEKYLL_ENV", "value": "production" },
+          { "key": "BUNDLE_GEMFILE", "value": "site/Gemfile" }
+        ],
+        "jekyll_environment": "production"
+      }
+}

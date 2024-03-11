@@ -1,0 +1,22 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Page Image
+  description: Page image
+  icon: wysiwyg
+  tags:
+    - Headers
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  image: ""
+  image_alt: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  image: /images/author-big.jpg
+  image_alt: My best photo
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}

@@ -1,2 +1,4 @@
+#!/usr/bin/env bash
 npm i
 npx @bookshop/generate
+echo "📚 ✅ : Postbuild script finished"

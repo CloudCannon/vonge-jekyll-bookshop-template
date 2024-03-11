@@ -28,7 +28,7 @@ Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Co
 
 ## Develop
 
-Vonge was built with [Jekyll](http://jekyllrb.com/) version 4.2.0, but should support newer versions as well.
+Vonge was built with [Jekyll](http://jekyllrb.com/) version 4.2.1, but should support newer versions as well.
 
 Install the dependencies for Bookshop:
 
@@ -39,7 +39,7 @@ $ npm install
 Install the Jekyll dependencies with [Bundler](http://bundler.io/):
 
 ~~~bash
-$ npm run install-jekyll
+$ npm run jekyll:install
 ~~~
 
 Run the website:

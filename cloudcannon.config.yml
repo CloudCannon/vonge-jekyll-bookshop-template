@@ -60,6 +60,15 @@ collections_config:
     output: false
     description: ''
     icon: format_quote
+    sort:
+      key: name
+    sort_options:
+      - key: name
+      - key: name
+        order: desc
+      - key: position
+      - key: position
+        order: desc
     preview:
       text:
       subtext:

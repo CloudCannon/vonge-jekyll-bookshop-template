@@ -9,7 +9,7 @@ plugins:
 # Multiple bookshops can be used on one website,
 # or different production / staging locations.
 bookshop_locations:
-  - ../components
+  - ../component-library
 
 exclude:
   - postcss.config.js

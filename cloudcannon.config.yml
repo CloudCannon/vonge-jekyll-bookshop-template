@@ -26,6 +26,9 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    schemas:
+      default:
+        path: site/schemas/post.md
   pages:
     path: collections/_pages
     output: true
@@ -33,6 +36,9 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    schemas:
+      default:
+        path: site/schemas/page.html
   projects:
     path: collections/_projects
     output: true
@@ -55,6 +61,8 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
     schemas:
+      default:
+        path: site/schemas/project.md
   testimonials:
     path: collections/_testimonials
     output: false
@@ -88,6 +96,8 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
     schemas:
+      default:
+        path: site/schemas/testimonial.md
   drafts:
     path: collections/_drafts
     output: true

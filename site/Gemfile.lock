@@ -85,7 +85,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cloudcannon-jekyll-bookshop (= 2.2.2)
   jekyll-bookshop (= 3.9.0)
   jekyll-pagebreak (~> 0.3)
   jekyll-sass-converter!

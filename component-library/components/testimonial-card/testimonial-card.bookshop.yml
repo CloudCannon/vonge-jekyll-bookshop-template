@@ -1,0 +1,26 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures: []
+  label: Testimonial Card
+  description: Testimonial card used for testimonial lists
+  icon: wysiwyg
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  testimonial-item:
+    name: ""
+    position: ""
+    blurb: ""
+    image: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  testimonial-item:
+    name: Hello World
+    position: Author
+    blurb: Lorem Ipsum
+    image: https://placekitten.com/1000/600
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}

@@ -1,28 +1,33 @@
 {
   "name": "vonge-jekyll-bookshop-template",
+  "private": true,
   "description": "Vonge template for CloudCannon",
   "scripts": {
-    "bookshop-dev": "bookshop-browser -p 6086 -b ./components",
-    "bookshop-hosted": "bookshop-browser -b ./components -o site/js/bookshop-hosted.js",
-    "bookshop-live": "bookshop-live -b ./components -o site/_cloudcannon/bookshop-live.js",
+    "bookshop": "bookshop-browser",
+    "jekyll:install": "BUNDLE_GEMFILE=site/Gemfile bundle install",
+    "bookshop-dev": "bookshop-browser -p 6086 -b ./component-library",
+    "bookshop-hosted": "bookshop-browser -b ./component-library -o site/js/bookshop-hosted.js",
+    "bookshop-live": "bookshop-live -b ./component-library -o site/_cloudcannon/bookshop-live.js",
     "jekyll": "BUNDLE_GEMFILE=site/Gemfile bundle exec jekyll serve --source site --port 6060 --trace --unpublished",
-    "start": "run-p bookshop-dev jekyll",
-    "install-jekyll": "BUNDLE_GEMFILE=site/Gemfile bundle install"
+    "start": "run-p bookshop jekyll"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bglw/bookshop-example.git"
+    "url": "git+https://github.com/CloudCannon/vonge-jekyll-bookshop-template.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bglw/bookshop-example/issues"
+    "url": "https://github.com/CloudCannon/vonge-jekyll-bookshop-template/issues"
   },
-  "homepage": "https://github.com/bglw/bookshop-example#readme",
+  "homepage": "https://github.com/CloudCannon/vonge-jekyll-bookshop-template#readme",
   "devDependencies": {
-    "@bookshop/browser": "^2.2.2",
-    "@bookshop/jekyll-engine": "^2.2.2",
-    "@bookshop/live": "^2.2.2",
+    "@bookshop/browser": "3.9.0",
+    "@bookshop/jekyll-engine": "3.9.0",
+    "@bookshop/live": "3.9.0",
     "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "@bookshop/generate": "3.9.0"
   }
 }

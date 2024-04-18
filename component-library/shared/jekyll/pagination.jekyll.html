@@ -5,7 +5,7 @@
 
       <div class="pagination__list">
         {% capture prev_text %}<i class="ion ion-ios-arrow-back"></i> Prev{% endcapture %}
-        {% if jekyll.environment != "development" %}<a data-pagebreak-control="prev" href="." class="pagination__prev">{{prev_text}}</a> {% endif %}
+        {% if jekyll.environment != "development" and env_bookshop_live != true %}<a data-pagebreak-control="prev" href="." class="pagination__prev">{{prev_text}}</a> {% endif %}
         <span data-pagebreak-control="!prev" class="pagination__prev disabled">{{prev_text}}</span>
 
         <div class="pagination__count">
@@ -14,7 +14,7 @@
         </div>
 
         {% capture next_text %}Next <i class="ion ion-ios-arrow-forward"></i>{% endcapture %}
-        {% if jekyll.environment != "development" %}<a data-pagebreak-control="next" href="." class="pagination__next">{{next_text}}</a>{% endif %}
+        {% if jekyll.environment != "development" and env_bookshop_live != true %}<a data-pagebreak-control="next" href="." class="pagination__next">{{next_text}}</a>{% endif %}
         <span data-pagebreak-control="!next" class="pagination__next disabled">{{next_text}}</span>
       </div>
 

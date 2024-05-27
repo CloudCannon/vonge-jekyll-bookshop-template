@@ -18,8 +18,6 @@ blueprint:
   image_alt: ""
   cta_button: ""
   cta_button_link: ""
-  works_button: ""
-  works_button_link: ""
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

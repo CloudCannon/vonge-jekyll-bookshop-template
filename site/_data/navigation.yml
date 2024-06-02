@@ -11,5 +11,5 @@ menu__settings:
       submenu:
         - url: /about/
           title: About
-        - url: /clients-portfolio/
+        - url: /client-portfolio/
           title: Client Portfolio

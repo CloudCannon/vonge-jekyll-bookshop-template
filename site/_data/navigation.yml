@@ -9,7 +9,5 @@ menu__settings:
           title: About Me
         - url: /client-portfolio/
           title: Client Work
-    - title: Contact Me
-      submenu:
-        - url: /contact/
+        - url: /contact-me/
           title: Contact

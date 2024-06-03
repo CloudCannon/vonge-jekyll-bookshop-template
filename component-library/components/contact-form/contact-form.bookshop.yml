@@ -20,7 +20,7 @@ blueprint:
 preview:
   form_title: Get in touch
   form_description: Conact form.
-  form_success_page: https://gnarly-lyrebird.cloudvent.net/thanks-for-getting-in-touch/
+  form_success_page: /thanks-for-getting-in-touch/
   form_submission_email: site@example.com
   form_button_text: Send now
 

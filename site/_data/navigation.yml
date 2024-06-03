@@ -10,6 +10,6 @@ menu__settings:
     - title: Pages
       submenu:
         - url: /about/
-          title: About
+          title: About Me
         - url: /client-portfolio/
           title: Client Work

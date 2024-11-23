@@ -1,8 +1,9 @@
 _site
-.sass-cache
+.bundle/
+.DS_Store
 .jekyll-cache
 .jekyll-metadata
-vendor
-node_modules
+.sass-cache
 bookshop-live.js
-.DS_Store
+node_modules
+vendor

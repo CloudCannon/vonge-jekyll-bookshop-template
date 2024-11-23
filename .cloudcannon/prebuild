@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-npm install
-echo "📚 ✅ : Prebuild script finished"

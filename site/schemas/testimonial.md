@@ -1,6 +1,0 @@
----
-name:
-position:
-image:
-blurb:
----

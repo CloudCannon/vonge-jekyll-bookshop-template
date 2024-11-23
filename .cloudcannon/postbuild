@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-npx -y @pagebreak/cli --source _site --output _site
-npm i
-npx @bookshop/generate
-echo "📚 ✅ : Postbuild script finished"

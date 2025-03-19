@@ -4,7 +4,7 @@
   "description": "Vonge template for CloudCannon",
   "scripts": {
     "bookshop": "bookshop-browser",
-    "jekyll:install": "BUNDLE_GEMFILE=site/Gemfile bundle install",
+    "jekyll:install": "BUNDLE_GEMFILE=site/Gemfile && bundle config set --local path 'vendor/bundle' && bundle install",
     "bookshop-dev": "bookshop-browser -p 6086 -b ./component-library",
     "bookshop-hosted": "bookshop-browser -b ./component-library -o site/js/bookshop-hosted.js",
     "bookshop-live": "bookshop-live -b ./component-library -o site/_cloudcannon/bookshop-live.js",

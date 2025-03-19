@@ -6,3 +6,5 @@ vendor
 node_modules
 bookshop-live.js
 .DS_Store
+site/.bundle
+.bundle

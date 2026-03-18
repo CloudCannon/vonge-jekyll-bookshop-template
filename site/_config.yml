@@ -1,20 +1,24 @@
-title: Vonge
+title: "백엔드 개발자 hi4579675의 포트폴리오"
 url: "https://hi4579675.github.io"
 baseurl: ""
 
+# Plugins
 plugins:
   - jekyll-bookshop
   - jekyll-sitemap
   - jekyll/tagging
 
-# Multiple bookshops can be used on one website,
-# or different production / staging locations.
+# Bookshop configuration
+# 로컬 경로 대신 현재 폴더 기준으로 수정 (에러 방지)
 bookshop_locations:
-  - ../component-library
+  - component-library
 
 exclude:
   - postcss.config.js
   - node_modules
+  - .cloudcannon
+  - Gemfile
+  - Gemfile.lock
 
 include:
   - _cloudcannon

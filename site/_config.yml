@@ -1,4 +1,6 @@
 title: Vonge
+url: "https://hi4579675.github.io"
+baseurl: ""
 
 plugins:
   - jekyll-bookshop

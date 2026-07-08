@@ -26,11 +26,11 @@
           <div class="section__info">
             <div class="section__head">
               <h2 class="section__title">You may also like</h2>
-              <a class="section__link" href="{{ '/blog' | relative_url }}">
+              <a class="section__link" href="{{ '/blog/' | relative_url }}">
                 {% if page.tags.size >= 1 %}
                 {% for tag in page.tags %}
                   {% if forloop.index == 1 %}
-                    <a href="{{ site.baseurl }}/tags#{{ tag }}" class="section__link related-tag">See all<span> {{ tag }}</span> <ion-icon name="arrow-forward"></ion-icon></a>
+                    <a href="{{ site.baseurl }}/tag/{{ tag | downcase }}/" class="section__link related-tag">See all<span> {{ tag }}</span> <ion-icon name="arrow-forward"></ion-icon></a>
                   {% endif %}
                 {% endfor %}
               {% endif %}
@@ -71,7 +71,7 @@
                     {% if post.tags.size >= 1 %}
                     <div class="article-tags__box">
                       {% for tag in post.tags %}
-                      <a href="{{ site.baseurl }}/tag/{{ tag | downcase }}" class="article__tag">{{ tag }}</a>
+                      <a href="{{ site.baseurl }}/tag/{{ tag | downcase }}/" class="article__tag">{{ tag }}</a>
                       {% endfor %}
                     </div>
                     {% endif %}

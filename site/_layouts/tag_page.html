@@ -27,7 +27,7 @@ layout: default
                 {% if post.tags.size >= 1 %}
                 <div class="article-tags__box">
                   {% for tag in post.tags %}
-                  <a href="{{ site.baseurl }}/tag/{{ tag | downcase }}/" class="article__tag">{{ tag }}</a>
+                  <a href="{{ tag | tag_url }}" class="article__tag">{{ tag }}</a>
                   {% endfor %}
                 </div>
                 {% endif %}

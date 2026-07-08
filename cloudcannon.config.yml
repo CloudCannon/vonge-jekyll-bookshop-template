@@ -46,7 +46,7 @@ collections_config:
         path: ".cloudcannon/schemas/page.html"
   projects:
     path: collections/_projects
-    url: "/project/[slug]/"
+    url: "/project/{title|slugify}/"
     description: ''
     icon: work
     disable_add: false

@@ -22,7 +22,7 @@ collections_dir: 'collections'
 collections:
   pages:
     output: true
-    permalink: /:title
+    permalink: /:slug
   projects:
     output: true
     permalink: /project/:slug

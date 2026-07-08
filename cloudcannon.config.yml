@@ -36,7 +36,7 @@ collections_config:
         path: ".cloudcannon/schemas/post.md"
   pages:
     path: collections/_pages
-    url: "/{title}"
+    url: "/[slug]"
     icon: wysiwyg
     disable_add: false
     disable_add_folder: false

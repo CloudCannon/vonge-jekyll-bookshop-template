@@ -22,15 +22,15 @@ collections_dir: 'collections'
 collections:
   pages:
     output: true
-    permalink: /:title
+    permalink: /:slug/
   projects:
     output: true
-    permalink: /project/:slug
+    permalink: /project/:slug/
   testimonials:
     output: false
   posts:
     output: true
-    permalink: /blog/:slug
+    permalink: /blog/:slug/
 
 defaults:
   - scope:
@@ -54,4 +54,4 @@ defaults:
 # Tags
 tag_page_dir: tag
 tag_page_layout: tag_page
-tag_permalink_style: /:title
+tag_permalink_style: pretty

@@ -23,7 +23,7 @@ collections_config:
     disable_file_actions: false
   posts:
     path: collections/_posts
-    url: "/blog/[slug]/"
+    url: "/blog/{title|slugify}/"
     icon: newspaper
     create:
       path: >-
